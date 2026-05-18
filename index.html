@@ -1,0 +1,161 @@
+<!-- Шапка сайта -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САЙТ - ВИЗИТКА ПО РЕПЕТИТОРСТВУ</title>
+    <link rel="stylesheet" href="стили сайта-визитки.css">
+  </head>
+
+<body>
+
+<header class="neon-header">
+    <div class="container nav">
+        <div class="logo">
+            <span class="logo-glow">Репетитор</span>
+            <span class="logo-accent">Ольга Юрьевна Шкёпу</span>
+        </div>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-overlay" id="navOverlay"></div>
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Преимущества</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="neon-line" aria-hidden="true"></div>
+</header>
+
+<!-- Главный баннер -->
+<section class="hero">
+    <div class="container">
+        <h1 class="interactive-heading">Понятное обучение  <b>без зубрежки</b></h1>
+        <p>Помогаю школьникам и студентам сдать экзамены (ЕГЭ/ОГЭ), подтянуть оценки и влюбиться в предмет. Индивидуальный подход и гарантированный результат.</p>
+        <a href="#contact" class="btn">Записаться на пробный урок</a>
+    </div>
+</section>
+
+<!-- Обо мне -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title interactive-heading">Обо мне</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Привет! Меня зовут Ольга</h3>
+                <br>
+                <p>Я профессиональный репетитор по английскому и немецкому языку, с опытом работы более 5 лет. За это время я помогла десяткам учеников достичь их целей: от успешной сдачи экзаменов до побед на олимпиадах.</p>
+                <br>
+                <p>Мой подход основан на понимании сути, а не на механическом запоминании формул и правил. Сложные вещи объясняю простыми словами, наглядными примерами и жизненными аналогиями.</p>
+            </div>
+            <div class="about-img">
+                <!-- Замени ссылку ниже на фото, когда загрузишь на хостинг -->
+                <img src="https://via.placeholder.com/400x400" alt="Фото репетитора">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section id="services">
+    <div class="container">
+        <h2 class="section-title interactive-heading">Почему выбирают меня</h2>
+        <div class="features-grid">
+            <article class="feature-card" data-delay="0">
+                <div class="feature-card__glow"></div>
+                <div class="feature-card__inner">
+                    <span class="feature-num">01</span>
+                    <div class="feature-icon-wrap">
+                        <span class="feature-icon">🎯</span>
+                    </div>
+                    <h3>Индивидуальная программа</h3>
+                    <p>Составляю план обучения под уровень и цели конкретного ученика после первого занятия.</p>
+                </div>
+            </article>
+            <article class="feature-card" data-delay="1">
+                <div class="feature-card__glow"></div>
+                <div class="feature-card__inner">
+                    <span class="feature-num">02</span>
+                    <div class="feature-icon-wrap">
+                        <span class="feature-icon">💻</span>
+                    </div>
+                    <h3>Удобный формат</h3>
+                    <p>Занятия проходят онлайн (Zoom) с использованием интерактивной доски. Никуда ехать не нужно.</p>
+                </div>
+            </article>
+            <article class="feature-card" data-delay="2">
+                <div class="feature-card__glow"></div>
+                <div class="feature-card__inner">
+                    <span class="feature-num">03</span>
+                    <div class="feature-icon-wrap">
+                        <span class="feature-icon">📈</span>
+                    </div>
+                    <h3>Контроль прогресса</h3>
+                    <p>Регулярные отчеты для родителей, проверка домашних заданий и отслеживание динамики результатов.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Отзывы -->
+<section id="reviews" class="testimonials">
+    <div class="container">
+        <h2 class="section-title interactive-heading">Отзывы учеников</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Прекрасный преподаватель! За 3 месяца подготовил к ОГЭ практически с нуля. Сдали на твердую четверку, ребенок в восторге!"</p>
+                <div class="student-name">— Екатерина (мама Алексея)</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Объясняет всё невероятно понятно. Раньше терпеть не могла этот предмет, а теперь это самый любимый урок в школе. Спасибо!"</p>
+                <div class="student-name">— Марина, 11 класс</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title interactive-heading">Записаться на занятие</h2>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Иван" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон / Telegram</label>
+                    <input type="text" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Какой класс/цель обучения?</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Например: 9 класс, подготовка к ОГЭ"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit" id="submitBtn">
+                    <span class="btn-submit__glow" aria-hidden="true"></span>
+                    <span class="btn-submit__text">Записаться на занятие</span>
+                    <span class="btn-submit__loader" aria-hidden="true"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Репетитор [Твое Имя]. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="интерактивность визитки.js"></script>
+</body>
